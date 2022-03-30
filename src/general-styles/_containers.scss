@@ -4,6 +4,13 @@
 }
 
 /* FLEX RULES */
-.flex {
+/* .flex {
   display: flex;
+} */
+
+@mixin flex($jc, $fd, $ai) {
+  display: flex;
+  justify-content: $jc;
+  flex-direction: $fd;
+  align-items: $ai;
 }
