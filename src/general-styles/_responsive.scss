@@ -1,0 +1,43 @@
+/* VIEWPORTS */
+$smartphone-lrg: 500px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-xl: 1200px;
+
+/* CONTAINERS */
+:root {
+  $container-max: 1110px;
+  $container-padding: 6.4vw;
+
+  @media(min-width: $smartphone-lrg) {
+    --container-padding: 10vw;
+  }
+
+  @media(min-width: $tablet) {
+    --container-padding: 2.438rem;
+  }
+
+  @media(min-width: $desktop-xl) {
+    --container-padding: 3.312rem;
+  }
+}
+
+/* VIEWPORT EXCLUSIVE ELEMENT RULES */
+
+.mobile-only {
+  @media(min-width: $tablet) {
+      display: none;
+  }
+}
+
+.tablet-only {
+  @media(max-width: calc($tablet - 1px)) {
+      display: none;
+  }
+}
+
+.desktop-only {
+  @media(max-width: calc($desktop - 1px)) {
+      display: none;
+  }
+}
