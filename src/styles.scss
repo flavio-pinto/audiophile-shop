@@ -4,3 +4,8 @@
 @import 'general-styles/colors';
 @import 'general-styles/texts';
 @import 'general-styles/containers';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
