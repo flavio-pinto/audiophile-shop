@@ -6,8 +6,8 @@ $desktop-xl: 1200px;
 
 /* VIEWPORT HORIZONTAL PADDING */
 :root {
-  $container-max: 1110px;
-  $container-padding: 6.4vw;
+  --container-max: 1110px;
+  --container-padding: 6.4vw;
 
   @media(min-width: $smartphone-lrg) {
     --container-padding: 10vw;

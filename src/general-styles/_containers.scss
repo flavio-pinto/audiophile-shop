@@ -1,16 +1,28 @@
 :root {
-  $header-h: 6rem;
-  $go-back-h: 2.5rem;
+  --header-h: 6rem;
+  --go-back-h: 2.5rem;
 }
 
-/* FLEX RULES */
-/* .flex {
-  display: flex;
-} */
-
-@mixin flex($jc, $fd, $ai) {
+/* @mixin flex($jc, $fd, $ai) {
   display: flex;
   justify-content: $jc;
   flex-direction: $fd;
   align-items: $ai;
+}
+ */
+
+.flex {
+  display: flex;
+  &-jcc {
+    justify-content: center;
+  }
+  &-jcsb {
+    justify-content: space-between;
+  }
+  &-col {
+    flex-direction: column;
+  }
+  &-aic {
+    align-items: center;
+  }
 }
