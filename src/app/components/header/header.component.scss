@@ -1,0 +1,23 @@
+$smartphone-lrg: 500px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-xl: 1200px;
+
+.header {
+  background-color: var(--dark-1);
+  height: var(--header-h);
+  padding: var(--container-padding);
+}
+
+nav {
+  flex-basis: 100%;
+}
+
+app-navbar-links {
+  display: none;
+
+  @media(min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
