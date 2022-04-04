@@ -1,0 +1,7 @@
+$desktop: 1024px;
+
+.toggle-menu {
+  @media(min-width: $desktop) {
+    display: none;
+  }
+}

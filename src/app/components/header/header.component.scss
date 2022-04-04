@@ -13,11 +13,24 @@ nav {
   flex-basis: 100%;
 }
 
-app-navbar-links {
+.header__nav__list {
+  padding: 0;
   display: none;
 
   @media(min-width: $desktop) {
     display: flex;
     justify-content: space-between;
+  }
+}
+.header__nav__list__item {
+  display: inline-block;
+}
+
+.header__nav__list__item__link {
+  color: var(--light-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: var(--main-1);
   }
 }
