@@ -1,0 +1,12 @@
+$tablet: 768px;
+
+.categories-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media(min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -6,7 +6,18 @@ $desktop-xl: 1200px;
 .header {
   background-color: var(--dark-1);
   height: var(--header-h);
+  width: 100vw;
   padding: var(--container-padding);
+  position: fixed;
+  left: 0;
+  z-index: 20;
+  border-bottom: 0.063rem solid var(--light-1);
+}
+
+.header__nav__hamburger {
+  @media(min-width: $desktop) {
+    display: none;
+  }
 }
 
 nav {
@@ -20,8 +31,10 @@ nav {
   @media(min-width: $desktop) {
     display: flex;
     justify-content: space-between;
+    width: 26.813rem;
   }
 }
+
 .header__nav__list__item {
   display: inline-block;
 }
@@ -33,4 +46,11 @@ nav {
   &:hover {
     color: var(--main-1);
   }
+}
+
+.header__nav__cart {
+  cursor: pointer;
+  /* &:hover {
+    background-image: var(--main-1);
+  } */
 }

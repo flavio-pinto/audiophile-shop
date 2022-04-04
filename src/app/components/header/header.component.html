@@ -13,7 +13,8 @@
       <li class="header__nav__list__item"><a class="header__nav__list__item__link" href="#">Earphones</a></li>
     </ul>
     <div class="header__nav__cart">
-      <img class="header__nav__cart__img" src="../../../assets/shared/desktop/icon-cart.svg" alt="cart icon">
+      <!-- <img class="header__nav__cart__img" src="../../../assets/shared/desktop/icon-cart.svg" alt="cart icon"> -->
+      <img class="header__nav__cart__img" [src]="imageSrc" (mouseover)="cartMouseOver()" (mouseout)="cartMouseOut()" alt="cart icon">
     </div>
   </nav>
 </header>

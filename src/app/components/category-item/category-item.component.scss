@@ -1,0 +1,46 @@
+$smartphone-lrg: 600px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-xl: 1200px;
+
+.categories-menu__item {
+  height: 10.313rem;
+  width: 100%;
+  max-width: 22.5rem;
+  margin: 4.25rem auto 0;
+  cursor: pointer;
+  background-color: var(--light-3);
+  border-radius: 0.5rem;
+
+  @media(min-width: $tablet) {
+    width: 28vw;
+    max-width: 16.25rem;
+}
+
+  @media(min-width: $desktop) {
+      width: 28vw;
+      max-width: 20rem;
+      height: 12.75rem;
+  }
+
+  @media(min-width: $desktop-xl) {
+      width: 21.875rem;
+      max-width: 21.875rem
+  }
+
+  img {
+    height: 8.6rem;
+    position: absolute;
+    transform: translateY(-38%);
+
+    @media(min-width: $desktop) {
+      height: 10rem;
+    }
+  }
+
+  h5 {
+    font-size: 0.938rem;
+    margin-top: 5.375rem;
+  }
+}
+

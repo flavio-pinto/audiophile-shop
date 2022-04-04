@@ -8,6 +8,7 @@ import { ToggleService } from 'src/app/services/toggle.service';
 })
 export class HeaderComponent implements OnInit {
   menuToggled: boolean = false;
+  imageSrc: string = '../../../assets/shared/desktop/icon-cart.svg';
 
   constructor(private toggleSrv: ToggleService) {
     this.toggleSrv.isMenuToggled().subscribe((res: boolean) => {
@@ -22,7 +23,13 @@ export class HeaderComponent implements OnInit {
   menuToggler(): void {
     this.toggleSrv.setToggleMenu(!this.menuToggled);
     console.log(this.menuToggled);
-
   }
 
+  cartMouseOver(): void {
+    this.imageSrc = '../../../assets/shared/desktop/icon-cart-hover.svg'
+  }
+
+  cartMouseOut(): void {
+    this.imageSrc = '../../../assets/shared/desktop/icon-cart.svg'
+  }
 }
