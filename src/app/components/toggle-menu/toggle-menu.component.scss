@@ -8,6 +8,7 @@ app-categories-list {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   position: fixed;
+  top: var(--header-h);
   left: 0;
   right: 0;
   background-color: var(--light-1);
