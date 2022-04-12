@@ -9,7 +9,12 @@ import { ToggleService } from './services/toggle.service';
     <app-toggle-menu *ngIf="menuToggled"></app-toggle-menu>
     <router-outlet></router-outlet>
   `,
-  styles: []
+  styles: [`
+    router-outlet {
+      display: block;
+      margin-top: var(--header-h);
+    }
+  `]
 })
 export class AppComponent {
   title = 'audiophile-shop';

@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ToggleMenuComponent } from './components/toggle-menu/toggle-menu.component';
 import { CategoriesListComponent } from './components/categories-list/categories-list.component';
 import { CategoryItemComponent } from './components/category-item/category-item.component';
+import { HomePage } from './pages/home/home.page';
+import { HeroNewProductComponent } from './components/hero-new-product/hero-new-product.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CategoryItemComponent } from './components/category-item/category-item.
     HeaderComponent,
     ToggleMenuComponent,
     CategoriesListComponent,
-    CategoryItemComponent
+    CategoryItemComponent,
+    HomePage,
+    HeroNewProductComponent
   ],
   imports: [
     BrowserModule,

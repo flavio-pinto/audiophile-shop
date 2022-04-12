@@ -9,6 +9,7 @@ $desktop-xl: 1200px;
   width: 100vw;
   padding: var(--container-padding);
   position: fixed;
+  top: 0;
   left: 0;
   z-index: 20;
   border-bottom: 0.063rem solid var(--light-1);

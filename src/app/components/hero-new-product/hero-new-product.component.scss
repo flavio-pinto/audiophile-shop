@@ -1,0 +1,192 @@
+//VIEWPORTS
+$smartphone-lrg: 500px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-xl: 1200px;
+
+//HERO SPACING
+$hero-height: 136vw;
+$hero-padding: 0 13vw;
+$hero-margin: 0;
+
+@media(min-width: $tablet) {
+  $hero-height: 83.205vw;
+  $hero-padding: 0 18vw;
+  $hero-margin: 0 2.4375rem;
+}
+
+@media(min-width: $desktop) {
+  $hero-height: 57vw;
+  $hero-padding: 0 38.5rem 0 2.4375rem;
+  $hero-margin: 0;
+}
+
+@media(min-width: $desktop-xl) {
+  $hero-height: 39.4375rem;
+  $hero-padding: 0 38rem 0 0;
+}
+
+.hero {
+  background-color: var(--dark-1);
+  color: var(--light-1);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+}
+
+.hero__background {
+  width: 100%;
+  height: $hero-height;
+  filter: contrast(1.50);
+  background-image: url('../../../assets/home/mobile/image-header.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+  display: flex;
+  padding: $hero-padding;
+
+  @media(min-width: 567px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+  }
+
+  @media(min-width: $tablet) {
+    background: url('../../../assets/home/tablet/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+    height: 83.205vw;
+    margin: 0 var(--container-padding);
+    padding: 0 18vw 0;
+  }
+
+  @media(min-width: 960px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-attachment: fixed;
+  }
+
+  @media(min-width: $desktop) {
+    background: url('../../../assets/home/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 55% -1vw;
+    background-attachment: fixed;
+    height: 57vw;
+    max-height: 39.5rem;
+    max-width: var(--container-max);
+    margin: 0;
+    padding: 0 37rem 0 0rem;
+  }
+
+  @media(min-width: $desktop-xl) {
+    max-width: var(--container-max);
+    padding: 0 38rem 0 0;
+    background-color: var(--dark-1);
+    height: 39.4375rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+  }
+}
+
+.hero__content {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: $hero-height;
+  display: flex;
+  padding: $hero-padding;
+  //z-index: 0;
+
+  @media(min-width: $tablet) {
+    margin: 0 var(--container-padding);
+    height: 83.205vw;
+    padding: 0 18vw;
+  }
+
+  @media(min-width: $desktop) {
+    margin: 0;
+    height: 57vw;
+    max-height: 39.5rem;
+    padding: 0 37rem 0 var(--container-padding);
+  }
+
+  @media(min-width: $desktop-xl) {
+    max-width: var(--container-max);
+    padding: 0 38rem 0 0;
+    height: 39.4375rem;
+  }
+}
+
+.overline-txt {
+  opacity: 0.4964;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+
+  @media(min-width: $desktop) {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.hero__content__title-txt {
+  font-size: 9.6vw;
+  font-weight: 700;
+  letter-spacing: 0.081rem;
+  line-height: 10.66vw;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  @media(min-width: $tablet) {
+    font-size: 7.2918vw;
+    letter-spacing: 0.125rem;
+    line-height: 7.5vw;
+  }
+
+  @media(min-width: $desktop) {
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    text-align: left;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.hero__content__parag {
+  opacity: 0.75;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @media(min-width: $tablet) {
+    padding: 0 4vw 0;
+  }
+
+  @media(min-width: $desktop) {
+    text-align: left;
+    padding: 0 8vw 0 0;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  @media(min-width: $desktop-xl) {
+    padding: 0 10rem 0 0;
+  }
+}
+
+button {
+  @media(min-width: $desktop) {
+    margin-right: auto;
+  }
+}
