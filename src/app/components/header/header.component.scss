@@ -21,8 +21,9 @@ $desktop-xl: 1200px;
   }
 }
 
-nav {
+.header__nav {
   flex-basis: 100%;
+  max-width: var(--container-max);
 }
 
 .header__nav__list {
