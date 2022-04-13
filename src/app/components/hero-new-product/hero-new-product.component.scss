@@ -32,7 +32,7 @@ $hero-margin: 0;
   width: 100vw;
   display: flex;
   justify-content: center;
-  z-index: 0;
+  z-index: -1;
   position: relative;
 }
 
@@ -105,7 +105,7 @@ $hero-margin: 0;
   height: $hero-height;
   display: flex;
   padding: $hero-padding;
-  //z-index: 0;
+  z-index: 0;
 
   @media(min-width: $tablet) {
     margin: 0 var(--container-padding);

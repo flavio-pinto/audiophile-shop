@@ -1,12 +1,32 @@
+//VIEWPORTS
+$smartphone-lrg: 500px;
 $tablet: 768px;
+$desktop: 1024px;
+$desktop-xl: 1200px;
 
 .categories-menu {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
+  background-color: var(--light-1);
 
   @media(min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--container-max);
+    //padding: 10rem var(--container-padding);
   }
+
+  @media(min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    //padding: 12.5rem 0;
+  }
+}
+
+app-category-item {
+  z-index: 1;
+  width: 100vw;
 }
