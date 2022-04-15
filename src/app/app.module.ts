@@ -9,6 +9,7 @@ import { CategoriesListComponent } from './components/categories-list/categories
 import { CategoryItemComponent } from './components/category-item/category-item.component';
 import { HomePage } from './pages/home/home.page';
 import { HeroNewProductComponent } from './components/hero-new-product/hero-new-product.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroNewProductComponent } from './components/hero-new-product/hero-new-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
