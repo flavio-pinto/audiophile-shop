@@ -15,6 +15,7 @@ export interface Product {
   },
   new: boolean,
   showcase: boolean,
+  showcaseName: string,
   showcaseDescription: string,
   price: number,
   description: string,

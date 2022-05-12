@@ -10,6 +10,7 @@ import { CategoryItemComponent } from './components/category-item/category-item.
 import { HomePage } from './pages/home/home.page';
 import { HeroNewProductComponent } from './components/hero-new-product/hero-new-product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     CategoriesListComponent,
     CategoryItemComponent,
     HomePage,
-    HeroNewProductComponent
+    HeroNewProductComponent,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
